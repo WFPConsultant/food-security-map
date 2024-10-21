@@ -40,5 +40,5 @@ Use the localhost URL (e.g., http://localhost:3000/) inside the cypress/e2e/spec
    ```bash
    npx cypress open
 
-Now you can run your test cases within Cypress and validate the application. A few of them is aleady done here.
+
 
