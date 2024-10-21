@@ -40,5 +40,7 @@ Use the localhost URL (e.g., http://localhost:3000/) inside the cypress/e2e/spec
    ```bash
    npx cypress open
 
+Now, with the test cases written in cypress/e2e/spec.cy.js, we can perform end-to-end testing. When Cypress is launched in the selected browser, the status of the tests will be displayed. A few test cases have already been written in this project.
+
 
 
