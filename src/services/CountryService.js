@@ -20,22 +20,24 @@ class CountryService {
   }
 
   getColorBasedOnPrevalence(prevalence) {
-    if (prevalence > 0.5) return '#c44cc0';
-    else if (prevalence > 0.4) return '#dd5ca8';
-    else if (prevalence > 0.3) return '#ec739b';
-    else if (prevalence > 0.2) return '#f1a8a5';
-    else if (prevalence > 0.1) return '#f4bfb6';
-    return '#f8d5cc'; // Default color
+    
+      if (prevalence > 0.5) return '#08306b';
+      else if (prevalence > 0.4) return '#08519c';
+      else if (prevalence > 0.3) return '#2171b5';
+      else if (prevalence > 0.2) return '#4292c6';
+      else if (prevalence > 0.1) return '#6baed6';
+
+      return '#6baed6'; // Default color
   }
 
   prepareLegendData() {
     return [
-      { prevalence: '> 50%', color: '#c44cc0' },
-      { prevalence: '> 40%', color: '#dd5ca8' },
-      { prevalence: '> 30%', color: '#ec739b' },
-      { prevalence: '> 20%', color: '#f1a8a5' },
-      { prevalence: '> 10%', color: '#f4bfb6' },
-      { prevalence: 'No data', color: '#f8d5cc' },
+      { prevalence: '> 50% Very high', color: '#08306b' }, 
+      { prevalence: '> 40% Moderately high', color: '#08519c' }, 
+      { prevalence: '> 30% Moderately low', color: '#2171b5' },
+      { prevalence: '> 20% Low', color: '#4292c6' }, 
+      { prevalence: '> 10% Very low', color: '#6baed6' },
+      { prevalence: 'No data', color: '#dceff7' },
     ];
   }
 }
